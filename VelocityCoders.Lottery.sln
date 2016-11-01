@@ -5,6 +5,12 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VelocityCoders.Lottery.Webforms", "VelocityCoders.Lottery.Webforms\VelocityCoders.Lottery.Webforms.csproj", "{ABA50681-C656-458C-A59B-BDD728FF028C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VelocityCoders.Lottery.Models", "VelocityCoders.Lottery.Models\VelocityCoders.Lottery.Models.csproj", "{1C0E35C4-9B8F-4FAC-9547-070A53EA7267}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VelocityCoders.Lottery.DAL", "VelocityCoders.Lottery.DAL\VelocityCoders.Lottery.DAL.csproj", "{F2D8DBFC-09E5-41B0-835B-5005B4256AC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uhler.Common", "Uhler.Common\Uhler.Common.csproj", "{7A387C2E-C2C9-4792-BDF2-A77EC841023D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{ABA50681-C656-458C-A59B-BDD728FF028C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ABA50681-C656-458C-A59B-BDD728FF028C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ABA50681-C656-458C-A59B-BDD728FF028C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C0E35C4-9B8F-4FAC-9547-070A53EA7267}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C0E35C4-9B8F-4FAC-9547-070A53EA7267}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C0E35C4-9B8F-4FAC-9547-070A53EA7267}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C0E35C4-9B8F-4FAC-9547-070A53EA7267}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2D8DBFC-09E5-41B0-835B-5005B4256AC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2D8DBFC-09E5-41B0-835B-5005B4256AC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2D8DBFC-09E5-41B0-835B-5005B4256AC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2D8DBFC-09E5-41B0-835B-5005B4256AC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A387C2E-C2C9-4792-BDF2-A77EC841023D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A387C2E-C2C9-4792-BDF2-A77EC841023D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A387C2E-C2C9-4792-BDF2-A77EC841023D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A387C2E-C2C9-4792-BDF2-A77EC841023D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -9,12 +9,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{ABA50681-C656-458C-A59B-BDD728FF028C}</ProjectGuid>
+    <ProjectGuid>{F2D8DBFC-09E5-41B0-835B-5005B4256AC0}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>VelocityCoders.Lottery.Webforms</RootNamespace>
-    <AssemblyName>VelocityCoders.Lottery.Webforms</AssemblyName>
+    <RootNamespace>VelocityCoders.Lottery.DAL</RootNamespace>
+    <AssemblyName>VelocityCoders.Lottery.DAL</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -94,25 +94,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Admin\BallTypeDetails.aspx" />
-    <Content Include="Admin\BallTypeList.aspx" />
-    <Content Include="Admin\CityDetails.aspx" />
-    <Content Include="Admin\CityList.aspx" />
-    <Content Include="Admin\CostDetails.aspx" />
-    <Content Include="Admin\CostList.aspx" />
-    <Content Include="Admin\DrawingDetails.aspx" />
-    <Content Include="Admin\DrawingList.aspx" />
-    <Content Include="Admin\DrawingNumbersDetails.aspx" />
-    <Content Include="Admin\DrawingNumbersList.aspx" />
-    <Content Include="Admin\GameDetailDetails.aspx" />
-    <Content Include="Admin\GameDetailList.aspx" />
-    <Content Include="Admin\GameDetails.aspx" />
-    <Content Include="Admin\GameList.aspx" />
-    <Content Include="Admin\Index.aspx" />
-    <Content Include="Admin\StateDetails.aspx" />
-    <Content Include="Admin\StateList.aspx" />
-    <Content Include="Admin\WhereToPlayDetails.aspx" />
-    <Content Include="Admin\WhereToPlayList.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -130,149 +111,22 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin\BallTypeDetails.aspx.cs">
-      <DependentUpon>BallTypeDetails.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\BallTypeDetails.aspx.designer.cs">
-      <DependentUpon>BallTypeDetails.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\BallTypeList.aspx.cs">
-      <DependentUpon>BallTypeList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\BallTypeList.aspx.designer.cs">
-      <DependentUpon>BallTypeList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\CityDetails.aspx.cs">
-      <DependentUpon>CityDetails.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\CityDetails.aspx.designer.cs">
-      <DependentUpon>CityDetails.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\CityList.aspx.cs">
-      <DependentUpon>CityList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\CityList.aspx.designer.cs">
-      <DependentUpon>CityList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\CostDetails.aspx.cs">
-      <DependentUpon>CostDetails.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\CostDetails.aspx.designer.cs">
-      <DependentUpon>CostDetails.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\CostList.aspx.cs">
-      <DependentUpon>CostList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\CostList.aspx.designer.cs">
-      <DependentUpon>CostList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\DrawingDetails.aspx.cs">
-      <DependentUpon>DrawingDetails.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\DrawingDetails.aspx.designer.cs">
-      <DependentUpon>DrawingDetails.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\DrawingList.aspx.cs">
-      <DependentUpon>DrawingList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\DrawingList.aspx.designer.cs">
-      <DependentUpon>DrawingList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\DrawingNumbersDetails.aspx.cs">
-      <DependentUpon>DrawingNumbersDetails.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\DrawingNumbersDetails.aspx.designer.cs">
-      <DependentUpon>DrawingNumbersDetails.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\DrawingNumbersList.aspx.cs">
-      <DependentUpon>DrawingNumbersList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\DrawingNumbersList.aspx.designer.cs">
-      <DependentUpon>DrawingNumbersList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\GameDetailDetails.aspx.cs">
-      <DependentUpon>GameDetailDetails.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\GameDetailDetails.aspx.designer.cs">
-      <DependentUpon>GameDetailDetails.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\GameDetailList.aspx.cs">
-      <DependentUpon>GameDetailList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\GameDetailList.aspx.designer.cs">
-      <DependentUpon>GameDetailList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\GameDetails.aspx.cs">
-      <DependentUpon>GameDetails.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\GameDetails.aspx.designer.cs">
-      <DependentUpon>GameDetails.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\GameList.aspx.cs">
-      <DependentUpon>GameList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\GameList.aspx.designer.cs">
-      <DependentUpon>GameList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\Index.aspx.cs">
-      <DependentUpon>Index.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\Index.aspx.designer.cs">
-      <DependentUpon>Index.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\StateDetails.aspx.cs">
-      <DependentUpon>StateDetails.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\StateDetails.aspx.designer.cs">
-      <DependentUpon>StateDetails.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\StateList.aspx.cs">
-      <DependentUpon>StateList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\StateList.aspx.designer.cs">
-      <DependentUpon>StateList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\WhereToPlayDetails.aspx.cs">
-      <DependentUpon>WhereToPlayDetails.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\WhereToPlayDetails.aspx.designer.cs">
-      <DependentUpon>WhereToPlayDetails.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\WhereToPlayList.aspx.cs">
-      <DependentUpon>WhereToPlayList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\WhereToPlayList.aspx.designer.cs">
-      <DependentUpon>WhereToPlayList.aspx</DependentUpon>
-    </Compile>
+    <Compile Include="AppConfiguration.cs" />
+    <Compile Include="BallTypeDAL.cs" />
+    <Compile Include="CityDAL.cs" />
+    <Compile Include="CostDAL.cs" />
+    <Compile Include="DrawingDAL.cs" />
+    <Compile Include="DrawingNumbersDAL.cs" />
+    <Compile Include="GameDAL.cs" />
+    <Compile Include="GameDetailDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StateDAL.cs" />
+    <Compile Include="WhereToPlayDAL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Uhler.Common\Uhler.Common.csproj">
       <Project>{7a387c2e-c2c9-4792-bdf2-a77ec841023d}</Project>
       <Name>Uhler.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\VelocityCoders.Lottery.DAL\VelocityCoders.Lottery.DAL.csproj">
-      <Project>{f2d8dbfc-09e5-41b0-835b-5005b4256ac0}</Project>
-      <Name>VelocityCoders.Lottery.DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\VelocityCoders.Lottery.Models\VelocityCoders.Lottery.Models.csproj">
       <Project>{1c0e35c4-9b8f-4fac-9547-070a53ea7267}</Project>
@@ -292,9 +146,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>63555</DevelopmentServerPort>
+          <DevelopmentServerPort>53305</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:63555/</IISUrl>
+          <IISUrl>http://localhost:53305/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
