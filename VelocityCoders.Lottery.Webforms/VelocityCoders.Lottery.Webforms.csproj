@@ -101,18 +101,21 @@
     <Content Include="Admin\CostDetails.aspx" />
     <Content Include="Admin\CostList.aspx" />
     <Content Include="Admin\DrawingDetails.aspx" />
+    <Content Include="Admin\DrawingForm\DrawingForm.aspx" />
     <Content Include="Admin\DrawingList.aspx" />
     <Content Include="Admin\DrawingNumbersDetails.aspx" />
     <Content Include="Admin\DrawingNumbersList.aspx" />
     <Content Include="Admin\GameDetailDetails.aspx" />
     <Content Include="Admin\GameDetailList.aspx" />
     <Content Include="Admin\GameDetails.aspx" />
+    <Content Include="Admin\GameForm\GameForm.aspx" />
     <Content Include="Admin\GameList.aspx" />
     <Content Include="Admin\Index.aspx" />
     <Content Include="Admin\StateDetails.aspx" />
     <Content Include="Admin\StateList.aspx" />
     <Content Include="Admin\WhereToPlayDetails.aspx" />
     <Content Include="Admin\WhereToPlayList.aspx" />
+    <Content Include="Images\MN-lottery-header.jpg" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -179,6 +182,13 @@
     <Compile Include="Admin\DrawingDetails.aspx.designer.cs">
       <DependentUpon>DrawingDetails.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\DrawingForm\DrawingForm.aspx.cs">
+      <DependentUpon>DrawingForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DrawingForm\DrawingForm.aspx.designer.cs">
+      <DependentUpon>DrawingForm.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\DrawingList.aspx.cs">
       <DependentUpon>DrawingList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -220,6 +230,13 @@
     </Compile>
     <Compile Include="Admin\GameDetails.aspx.designer.cs">
       <DependentUpon>GameDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GameForm\GameForm.aspx.cs">
+      <DependentUpon>GameForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\GameForm\GameForm.aspx.designer.cs">
+      <DependentUpon>GameForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\GameList.aspx.cs">
       <DependentUpon>GameList.aspx</DependentUpon>
