@@ -51,7 +51,14 @@
                     </td>
                 </tr>
             </table>
+    <asp:Button runat="server" Text="Save" OnClick="Save_Click" />
     </div>
+        <br />
+        <div>
+            <asp:Label runat="server" ID="lblDisplayMessage" />
+        </div>
+        <br />
+        <a href="../GameForm/GameForm.aspx">Go to Game Form</a>
     </form>
 </body>
 </html>

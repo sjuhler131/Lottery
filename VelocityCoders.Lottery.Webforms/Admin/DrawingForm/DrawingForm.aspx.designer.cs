@@ -65,5 +65,14 @@ namespace VelocityCoders.Lottery.Webforms.Admin.DrawingForm {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtMultiplier;
+        
+        /// <summary>
+        /// lblDisplayMessage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblDisplayMessage;
     }
 }

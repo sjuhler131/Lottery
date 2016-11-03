@@ -30,7 +30,13 @@
                 <td><asp:TextBox runat="server" ID="txtDescription" TextMode="MultiLine" /></td>
             </tr>
             </table>
+        <asp:Button runat="server" Text="Save" OnClick="Save_Click" />
     </div>
+        <div>
+            <asp:Label runat="server" ID="lblDisplayMessage" />
+        </div>
+        <br />
+        <a href="../DrawingForm/DrawingForm.aspx">Go to Drawing Form</a>
     </form>
 </body>
 </html>
