@@ -16,7 +16,14 @@
                 <tr>
                     <td><label>Game Name:</label></td>
                     <td>
-                        <asp:DropDownList runat="server" ID="drpGameName"></asp:DropDownList>
+                        <asp:DropDownList runat="server" ID="drpGameName">
+                            <asp:ListItem Text="(Select Game)" Value ="0" />
+                            <asp:ListItem Text="Powerball" Value ="Powerball" />
+                            <asp:ListItem Text="Mega Millions" Value ="MegaMillions" />
+                            <asp:ListItem Text="Gopher 5" Value ="Gopher5" />
+                            <asp:ListItem Text="North Star Cash" Value ="NorthStarCash" />
+                        </asp:DropDownList>
+                        
                     </td>
                 </tr>
                 <tr>

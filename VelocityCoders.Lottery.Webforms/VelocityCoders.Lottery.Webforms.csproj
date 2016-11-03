@@ -130,6 +130,8 @@
   <ItemGroup>
     <Content Include="scripts\ai.0.22.19-build00125.js" />
     <Content Include="scripts\ai.0.22.19-build00125.min.js" />
+    <Content Include="ViewStateTests\ViewStateOff.aspx" />
+    <Content Include="ViewStateTests\ViewStateOn.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -281,6 +283,20 @@
       <DependentUpon>WhereToPlayList.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewStateTests\ViewStateOff.aspx.cs">
+      <DependentUpon>ViewStateOff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewStateTests\ViewStateOff.aspx.designer.cs">
+      <DependentUpon>ViewStateOff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewStateTests\ViewStateOn.aspx.cs">
+      <DependentUpon>ViewStateOn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewStateTests\ViewStateOn.aspx.designer.cs">
+      <DependentUpon>ViewStateOn.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Uhler.Common\Uhler.Common.csproj">
