@@ -115,7 +115,10 @@
     <Content Include="Admin\StateList.aspx" />
     <Content Include="Admin\WhereToPlayDetails.aspx" />
     <Content Include="Admin\WhereToPlayList.aspx" />
+    <Content Include="App_Themes\Main\Main.css" />
     <Content Include="Images\MN-lottery-header.jpg" />
+    <Content Include="Images\MN-Lottery-logo2.jpg" />
+    <Content Include="Images\top-banner-blue-trees.png" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -282,6 +285,7 @@
     <Compile Include="Admin\WhereToPlayList.aspx.designer.cs">
       <DependentUpon>WhereToPlayList.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Enums\Enums.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewStateTests\ViewStateOff.aspx.cs">
       <DependentUpon>ViewStateOff.aspx</DependentUpon>
