@@ -1,4 +1,16 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="GameForm.aspx.cs" Inherits="VelocityCoders.Lottery.Webforms.Admin.GameForm.GameForm" %>
+﻿<%@ Page Language="C#" 
+    AutoEventWireup="true" 
+    CodeBehind="GameForm.aspx.cs" 
+    Theme="Main"
+    Inherits="VelocityCoders.Lottery.Webforms.Admin.GameForm.GameForm" %>
+
+<%@ Register
+    TagPrefix="CustomVelocityCoders"
+    TagName="GameNavigationControl"
+    Src="~/Admin/UserControls/GameNavigationControl.ascx"
+     %>
+
+
 
 <!DOCTYPE html>
 
@@ -12,6 +24,10 @@
     <img src="/Images/MN-lottery-header.jpg" />
         <br />
         <br />
+        <CustomVelocityCoders:GameNavigationControl runat="server" id="GameNavigationControl" />
+        <br />
+        <br />
+        <div id="Subeader">
         <table>
             <tr>
               <td><label>Game Name:</label></td>
@@ -30,6 +46,7 @@
                 <td><asp:TextBox runat="server" ID="txtDescription" TextMode="MultiLine" /></td>
             </tr>
             </table>
+            </div>
         <asp:Button runat="server" Text="Save" OnClick="Save_Click" />
     </div>
         <div>

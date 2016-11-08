@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Text;
+using VelocityCoders.Lottery.WebForms;
 
 namespace VelocityCoders.Lottery.Webforms.Admin.GameForm
 {
@@ -12,7 +13,14 @@ namespace VelocityCoders.Lottery.Webforms.Admin.GameForm
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            this.BindGameNavaigation();
+        }
 
+        private void BindGameNavaigation()
+        {
+            GameNavigationControl.CurrentNavigationLink = GameNavigation.GameForm;
+
+            GameNavigationControl.GameId = 1;
         }
 
         protected void Save_Click(object sender, EventArgs e)

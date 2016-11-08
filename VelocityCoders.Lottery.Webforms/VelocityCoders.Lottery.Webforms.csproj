@@ -113,6 +113,7 @@
     <Content Include="Admin\Index.aspx" />
     <Content Include="Admin\StateDetails.aspx" />
     <Content Include="Admin\StateList.aspx" />
+    <Content Include="Admin\UserControls\GameNavigationControl.ascx" />
     <Content Include="Admin\WhereToPlayDetails.aspx" />
     <Content Include="Admin\WhereToPlayList.aspx" />
     <Content Include="App_Themes\Main\Main.css" />
@@ -271,6 +272,13 @@
     <Compile Include="Admin\StateList.aspx.designer.cs">
       <DependentUpon>StateList.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\UserControls\GameNavigationControl.ascx.cs">
+      <DependentUpon>GameNavigationControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserControls\GameNavigationControl.ascx.designer.cs">
+      <DependentUpon>GameNavigationControl.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\WhereToPlayDetails.aspx.cs">
       <DependentUpon>WhereToPlayDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -316,6 +324,7 @@
       <Name>VelocityCoders.Lottery.Models</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
