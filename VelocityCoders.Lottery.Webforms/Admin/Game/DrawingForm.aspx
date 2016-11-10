@@ -1,18 +1,25 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DrawingForm.aspx.cs" Inherits="VelocityCoders.Lottery.Webforms.Admin.DrawingForm.DrawingForm" %>
+﻿<%@ Page 
+    Language="C#"
+    Theme="Main"
+    MasterPageFile="~/MasterPages/Site2Column.Master" 
+    AutoEventWireup="true" 
+    CodeBehind="DrawingForm.aspx.cs" 
+    Inherits="VelocityCoders.Lottery.Webforms.Admin.DrawingForm.DrawingForm" %>
 
-<!DOCTYPE html>
+<%@ Register
+    TagPrefix="CustomVelocityCoders"
+    TagName="GameNavigationControl"
+    Src="~/Admin/UserControls/GameNavigationControl.ascx"
+     %>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div>
-    <img src="/Images/MN-lottery-header.jpg" />
-        <br />
-        <br />
-            <table>
+<asp:Content ID="Content3" ContentPlaceHolderID="BannerText" runat="server">
+    <h1 class="Banner-Text">Drawing Form</h1>
+                    <p>Insert Drawing information</p>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <CustomVelocityCoders:GameNavigationControl runat="server" id="GameNavigationControl" />
+            <table id="Table">
                 <tr>
                     <td><label>Game Name:</label></td>
                     <td>
@@ -51,14 +58,16 @@
                     </td>
                 </tr>
             </table>
+    <div id ="Button">
     <asp:Button runat="server" Text="Save" OnClick="Save_Click" />
-    </div>
+        </div>
         <br />
         <div>
             <asp:Label runat="server" ID="lblDisplayMessage" />
         </div>
         <br />
-        <a href="../GameForm/GameForm.aspx">Go to Game Form</a>
-    </form>
-</body>
-</html>
+    </asp:Content>
+        
+
+
+ 

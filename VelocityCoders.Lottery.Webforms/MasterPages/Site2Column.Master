@@ -13,11 +13,22 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
+   <div id="Header">
+       <img src="../../Images/top-banner-blue-trees.png" />             
+            </div>
+            <div id="Subheader">
+                <div class="Banner">
+                    <asp:ContentPlaceHolder ID="BannerText" runat="server">
+
+                        </asp:ContentPlaceHolder>                   
+                </div>
+            </div> 
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
-    </div>
+ <div id="Footer">        
+            <img src="../../Images/top-banner-blue-trees.png" />
+        </div>
     </form>
 </body>
 </html>

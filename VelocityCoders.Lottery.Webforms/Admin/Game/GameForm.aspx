@@ -1,6 +1,7 @@
 ﻿<%@ Page Language="C#" 
     AutoEventWireup="true" 
     CodeBehind="GameForm.aspx.cs" 
+    MasterPageFile="~/MasterPages/Site2Column.Master"
     Theme="Main"
     Inherits="VelocityCoders.Lottery.Webforms.Admin.GameForm.GameForm" %>
 
@@ -10,24 +11,16 @@
     Src="~/Admin/UserControls/GameNavigationControl.ascx"
      %>
 
+<asp:Content ID="Content3" ContentPlaceHolderID="BannerText" runat="server">
+    <h1 class="Banner-Text">Game Form</h1>
+                    <p>Insert Game information</p>
+</asp:Content>
 
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div>
-    <img src="/Images/MN-lottery-header.jpg" />
-        <br />
-        <br />
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <CustomVelocityCoders:GameNavigationControl runat="server" id="GameNavigationControl" />
         <br />
         <br />
-        <div id="Subeader">
+        <div id="Subtable">
         <table>
             <tr>
               <td><label>Game Name:</label></td>
@@ -47,13 +40,12 @@
             </tr>
             </table>
             </div>
-        <asp:Button runat="server" Text="Save" OnClick="Save_Click" />
-    </div>
+        <div id="Button">
+        <asp:Button runat="server" Text="Save" OnClick="Save_Click" />  
+         </div>
         <div>
             <asp:Label runat="server" ID="lblDisplayMessage" />
         </div>
         <br />
-        <a href="../DrawingForm/DrawingForm.aspx">Go to Drawing Form</a>
-    </form>
-</body>
-</html>
+    </asp:Content>
+     

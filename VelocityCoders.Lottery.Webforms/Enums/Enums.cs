@@ -23,7 +23,7 @@
         /// Page contains relationship between Game and Drawing
         /// </summary>
 
-        GameDrawing,
+        DrawingForm,
 
         /// <summary>
         /// Page contains relationship between Game and Game Detail

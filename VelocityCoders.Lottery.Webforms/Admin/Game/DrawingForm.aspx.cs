@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Text;
+using VelocityCoders.Lottery.WebForms;
 
 namespace VelocityCoders.Lottery.Webforms.Admin.DrawingForm
 {
@@ -12,8 +13,10 @@ namespace VelocityCoders.Lottery.Webforms.Admin.DrawingForm
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
+
+        
 
         protected void Save_Click(object sender, EventArgs e)
         {
